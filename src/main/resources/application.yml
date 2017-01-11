@@ -1,0 +1,17 @@
+server:
+  port: 8888
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/manojbest/configurations
+          #username: uname
+          #password: password
+          search-paths:
+            - eir-code-service
+            - uk-code-service
+            - edge-service
+            - sidecar-service
+            - eureka-service
